@@ -1,6 +1,6 @@
 async function convertVideo() {
     const link = document.getElementById('youtube-link').value;
-    const response = await fetch('https://YOUR_BACKEND_URL/video', {
+    const response = await fetch('https://replit.com/@namosxd002/youtube-converter-backend', {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({ url: link })
@@ -11,7 +11,7 @@ async function convertVideo() {
 
 async function convertAudio() {
     const link = document.getElementById('youtube-link').value;
-    const response = await fetch('https://YOUR_BACKEND_URL/audio', {
+    const response = await fetch('https://replit.com/@namosxd002/youtube-converter-backend', {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({ url: link })
